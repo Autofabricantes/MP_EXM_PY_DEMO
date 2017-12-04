@@ -1,5 +1,6 @@
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import time
+import Adafruit_GPIO.SPI as SPI
 from MCP3008 import MCP3008
 
 MPOT_0 = 1
