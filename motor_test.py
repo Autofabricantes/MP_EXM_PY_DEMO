@@ -19,11 +19,11 @@ def motor_control(duty_cycle):
     if(duty_cycle >= 0):
         pwm.set_pwm(MOT_0_PWM, 0, duty_cycle)  # set motor speed
         GPIO.output(MOT_0_A_CTRL, GPIO.LOW)  # set pin LOW
-	GPIO.output(MOT_0_B_CTRL, GPIO.HIGH)  # set pin HIGH
+        GPIO.output(MOT_0_B_CTRL, GPIO.HIGH)  # set pin HIGH
     else:
         pwm.set_pwm(MOT_0_PWM, 0, abs(duty_cycle))  # set motor speed
         GPIO.output(MOT_0_A_CTRL, GPIO.HIGH)  # set pin HIGH
-	GPIO.output(MOT_0_B_CTRL, GPIO.LOW)  # set pin LOW
+        GPIO.output(MOT_0_B_CTRL, GPIO.LOW)  # set pin LOW
 
 while(True):
     try:
