@@ -45,7 +45,7 @@ while(True):
     try:
         duty_cycle = int(input("Enter PWM duty cycle (min: -4096, max: 4096): "))
         motor_control(duty_cycle)
-	feedback = adc.read_adc(MPOT_0)
+        feedback = adc.read_adc(MPOT_0)
         print(feedback)
         time.sleep(0.5)
     except Exception as err:
