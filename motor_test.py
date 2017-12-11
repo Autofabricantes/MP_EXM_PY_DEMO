@@ -30,5 +30,6 @@ while(True):
         duty_cycle = int(input("Enter PWM duty cycle (min: -4096, max: 4096): "))
         motor_control(duty_cycle)
     except Exception as err:
+        GPIO.cleanup()
         print(err)
         break

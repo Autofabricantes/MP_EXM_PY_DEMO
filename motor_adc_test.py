@@ -49,6 +49,6 @@ while(True):
         print(feedback)
         time.sleep(0.5)
     except Exception as err:
+        GPIO.cleanup()
         print(err)
         break
-
